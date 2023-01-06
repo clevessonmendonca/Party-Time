@@ -1,0 +1,88 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviço",
+    "description": "Alguma descrição",
+    "price": 1400,
+    "image": "https://i.ytimg.com/an_webp/EDotqZwJ4aA/mqdefault_6s.webp?du=3000&sqp=CICs4Z0G&rs=AOn4CLAX92je2MqN1ywMvt8aXmDOJzlSdg"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/63b86317373dba76ea7c0f65
+
+###
+
+PUT http://localhost:3000/api/services/63b86317373dba76ea7c0f65
+Content-Type: application/json
+
+{
+    "name": "TESTE UPDATED",
+    "description": "algum description",
+    "price": 16500,
+    "image": "https://avatars.githubusercontent.com/u/75531298?v=4"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento",
+    "author": "Matheus",
+    "description": "algum description",
+    "budget": 9000,
+    "image": "https://avatars.githubusercontent.com/u/75531298?v=4",
+    "services": [
+        {
+            "name": "Algum serviço",
+            "description": "Alguma descrição",
+            "price": 3400,
+            "image": "https://i.ytimg.com/an_webp/EDotqZwJ4aA/mqdefault_6s.webp?du=3000&sqp=CICs4Z0G&rs=AOn4CLAX92je2MqN1ywMvt8aXmDOJzlSdg"
+        },
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição",
+            "price": 1600,
+            "image": "https://i.ytimg.com/an_webp/EDotqZwJ4aA/mqdefault_6s.webp?du=3000&sqp=CICs4Z0G&rs=AOn4CLAX92je2MqN1ywMvt8aXmDOJzlSdg"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/63b869c1e020adcadde07a48
+
+###
+DELETE http://localhost:3000/api/parties/63b869c1e020adcadde07a48
+
+###
+PUT http://localhost:3000/api/parties/63b86b87c1c19a4915b0adee
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Matheus",
+    "description": "algum description",
+    "budget": 15000,
+    "image": "https://avatars.githubusercontent.com/u/75531298?v=4",
+    "services": [
+        {
+            "name": "Algum serviço",
+            "description": "Alguma descrição",
+            "price": 3400,
+            "image": "https://i.ytimg.com/an_webp/EDotqZwJ4aA/mqdefault_6s.webp?du=3000&sqp=CICs4Z0G&rs=AOn4CLAX92je2MqN1ywMvt8aXmDOJzlSdg"
+        },
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição",
+            "price": 1600,
+            "image": "https://i.ytimg.com/an_webp/EDotqZwJ4aA/mqdefault_6s.webp?du=3000&sqp=CICs4Z0G&rs=AOn4CLAX92je2MqN1ywMvt8aXmDOJzlSdg"
+        }
+    ]
+}
